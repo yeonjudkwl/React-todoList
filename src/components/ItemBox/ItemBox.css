@@ -1,0 +1,12 @@
+.item_box{
+    margin-bottom: 15px;
+}
+.delete_btn{
+    position: absolute;
+    right: 20px;
+    width: 70px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
