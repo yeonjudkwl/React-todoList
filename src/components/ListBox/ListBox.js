@@ -2,11 +2,12 @@ import React from "react";
 import ItemBox from '../ItemBox'
 import "./ListBox.css";
 
-const ListBox = () => {
+const ListBox = ({ list, deleteItem }) => {
   return (
     <ul className="list_box">
-      <ItemBox />
-      <ItemBox />
+      {Object.values(list).map(item => {
+        return <ItemBox {...item} key={item.id} onClick={deleteItem} />;
+      })}
     </ul>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import "./ItemBox.css";
 
-const ItemBox = () => {
+const ItemBox = ({ id, work, onClick }) => {
   return (
     <li className="item_box">
-      <span className="item_box_work">첫 번째 할 일</span>
-      <button className="delete_btn">X</button>
+      <span className="item_box_work">{work}</span>
+      <button className="delete_btn" onClick={() => onClick(id)}>X</button>
     </li>
   );
 };
